@@ -1,0 +1,83 @@
+.message-input-box {
+  width: 100%;
+}
+
+.input-box {
+  display: flex;
+  background-color: var(--background-contrast-700);
+  border-radius: 10px;
+  box-shadow: rgba(55, 55, 61, 0.2) 0px 7px 29px 0px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.input-box input,
+.input-box textarea {
+  padding: 0 1rem;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: var(--background-contrast-700);
+  color: white;
+  transition: var(--transition-duration) ease;
+  font-weight: 600;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box input:hover,
+.input-box textarea:hover {
+  background-color: var(--background-contrast-500);
+}
+
+.input-box textarea {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.message-submit {
+  background-color: var(--background-contrast-300);
+  color: white;
+  width: 4rem;
+  height: 3.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-duration) ease;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.message-submit:hover {
+  background-color: var(--contrast);
+  color: black;
+}
+
+.chat .message-input-box-pre-anim {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chat .message-input-box-post-anim {
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .input-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .input-box {
+    width: 95%;
+  }
+  .input-box input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

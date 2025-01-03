@@ -1,0 +1,7 @@
+.form-control {
+  outline: none;
+  padding: 1rem;
+}
+.form-control:focus {
+  background-color: #fafafa;
+}

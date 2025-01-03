@@ -1,0 +1,21 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input,
+.auth-form button {
+  margin-top: 0.5rem;
+}
+
+.submit-button {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  transition: var(--transition-duration) ease;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-hover);
+}

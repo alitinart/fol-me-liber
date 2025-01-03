@@ -1,0 +1,21 @@
+.message-history {
+  padding: 10rem;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+.chat {
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .message-history {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .message-history {
+    padding: 2rem;
+  }
+}

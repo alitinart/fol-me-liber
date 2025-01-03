@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  background-color: var(--background);
+}
+
+:root {
+  --background: #222628;
+  --background-contrast-700: #3e4448;
+  --background-contrast-300: #485054;
+  --background-contrast-500: #444b4f;
+
+  --contrast: #f4fff8;
+  --contrast-secondary: #babfbc;
+
+  --primary: #ef2d56;
+  --primary-hover: #d6234a;
+
+  --gray: #b1b1b1;
+
+  --secondary-background: rgb(19, 21, 22);
+  --secondary-background-contrast-600: rgb(35, 38, 40);
+  --secondary-background-contrast-500: rgb(40, 43, 45);
+  --secondary-background-contrast-200: rgb(46, 49, 52);
+
+  --transition-duration: 0.25s;
+}
+
+* {
+  --sb-track-color: transparent;
+  --sb-thumb-color: #ffffff;
+  --sb-size: 3px;
+}
+
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 26px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 26px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.form-control-dark {
+  background-color: var(--background-contrast-700);
+  color: white;
+}
+
+.form-control-outline {
+  background-color: inherit;
+  border: 2px solid var(--gray);
+}
+
+.form-control-outline::placeholder {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: var(--transition-duration);
+  overflow-wrap: break-word;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.default-duration {
+  transition-duration: var(--transition-duration);
+}

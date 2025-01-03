@@ -1,0 +1,42 @@
+.ingest-modal {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.275);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--contrast);
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  width: 35%;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form input {
+  margin: 1rem 0;
+}
+
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 80%;
+  }
+}
